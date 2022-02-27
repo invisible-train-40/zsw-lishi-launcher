@@ -37,7 +37,7 @@ const RoutesBase: React.FC<RouteComponentProps> = () => {
         <Route exact={true} path={Paths.home} component={HomePage} />
         <Route exact={true} path={Paths.graphiql} component={GrapiQLPage} />
         <Route exact={true} path={Paths.mock} component={MockPage} />
-        <Route exact={true} path={Paths.dmesh} component={DmeshPage} />
+        <Route exact={true} path={Paths.zswmesh} component={DmeshPage} />
         <Redirect to="/" />
       </Switch>
     </>

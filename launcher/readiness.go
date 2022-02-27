@@ -17,7 +17,7 @@ package launcher
 import (
 	"sync"
 
-	pbdashboard "github.com/dfuse-io/dlauncher/dashboard/pb"
+	pbdashboard "github.com/invisible-train-40/zsw-lishi-launcher/dashboard/pb"
 	"go.uber.org/zap"
 )
 

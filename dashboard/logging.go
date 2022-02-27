@@ -22,5 +22,5 @@ import (
 var zlog *zap.Logger
 
 func init() {
-	logging.Register("github.com/dfuse-io/dlauncher/dashboard", &zlog)
+	logging.Register("github.com/invisible-train-40/zsw-lishi-launcher/dashboard", &zlog)
 }

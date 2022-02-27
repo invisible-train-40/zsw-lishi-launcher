@@ -11,9 +11,9 @@ export const ConfigContext = createContext<ConfigContextType>(null!)
 
 
 export default function ConfigProvider(props: React.PropsWithChildren<{}>) {
-  const title = (windowTS.TopLevelConfig ? windowTS.TopLevelConfig.title  : "dfuse dashboard")
-  const blockExplorerName = (windowTS.TopLevelConfig ? windowTS.TopLevelConfig.blockExplorerName  : "explorer")
-  const headBlockNumberApp = (windowTS.TopLevelConfig ? windowTS.TopLevelConfig.headBlockNumberApp  : "mindreader-node")
+  const title = (windowTS.TopLevelConfig ? windowTS.TopLevelConfig.title  : "中数文联盟链历史节点管理台")
+  const blockExplorerName = (windowTS.TopLevelConfig ? windowTS.TopLevelConfig.blockExplorerName  : "区块浏览器")
+  const headBlockNumberApp = (windowTS.TopLevelConfig ? windowTS.TopLevelConfig.headBlockNumberApp  : "历史节点系统")
 
   return (
     <ConfigContext.Provider value={{title, blockExplorerName, headBlockNumberApp}}>

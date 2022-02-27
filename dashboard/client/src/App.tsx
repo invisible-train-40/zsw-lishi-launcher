@@ -15,6 +15,7 @@
  */
 
 import React from 'react';
+import 'antd/dist/antd.min.css';
 import './App.css';
 import { Router } from 'react-router-dom';
 import { Routes } from './components/routes/routes';

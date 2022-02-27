@@ -1,4 +1,4 @@
-module github.com/dfuse-io/dlauncher
+module github.com/invisible-train-40/zsw-lishi-launcher
 
 go 1.14
 

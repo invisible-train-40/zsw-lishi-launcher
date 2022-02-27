@@ -17,8 +17,8 @@ package dashboard
 import (
 	"time"
 
-	"github.com/dfuse-io/dlauncher/launcher"
-	"github.com/dfuse-io/dlauncher/metrics"
+	"github.com/invisible-train-40/zsw-lishi-launcher/launcher"
+	"github.com/invisible-train-40/zsw-lishi-launcher/metrics"
 	dmeshCli "github.com/dfuse-io/dmesh/client"
 	"github.com/dfuse-io/shutter"
 	"go.uber.org/zap"

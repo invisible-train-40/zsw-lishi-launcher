@@ -20,7 +20,7 @@ export const Paths = {
   home: '/',
   graphiql: '/grapher',
   mock: '/mock',
-  dmesh: '/dmesh'
+  zswmesh: '/zswmesh'
 };
 
 export const Links = {
