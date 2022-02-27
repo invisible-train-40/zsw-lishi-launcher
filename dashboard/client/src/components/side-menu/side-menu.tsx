@@ -93,7 +93,7 @@ export const SideMenu: React.FC = () => {
             <IconWrapper>
               <FontAwesomeIcon icon={faHome} />
             </IconWrapper>
-            <span>HOME</span>
+            <span>首页</span>
           </Link>
         </Menu.Item>
         <Menu.Item key="graphiql">
@@ -105,11 +105,11 @@ export const SideMenu: React.FC = () => {
           </Link>
         </Menu.Item>
         <Menu.Item key="dmesh">
-          <Link to={Paths.dmesh}>
+          <Link to={Paths.zswmesh}>
             <IconWrapper>
               <FontAwesomeIcon icon={faNetworkWired} />
             </IconWrapper>
-            <span>dmesh</span>
+            <span>zswmesh</span>
           </Link>
         </Menu.Item>
         <Menu.Item key="eosq">
