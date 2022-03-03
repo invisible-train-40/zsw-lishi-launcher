@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 import React from "react";
 import { styled } from "../../theme";
 import { colors } from "../../theme/colors";
@@ -32,6 +31,8 @@ import { Link } from "react-router-dom";
 import { Paths } from "../routes/paths";
 import { useConfig } from "../../context/config";
 // import { useAppsList } from '../../context/apps-list';
+
+const BLK_EXPLORER_LINK = process.env.REACT_APP_DASHBOARD_BLOCK_EXPLORER_URL || ('http://'+window.location.hostname+':8080');
 
 const IconWrapper = styled(Cell)`
   cursor: pointer;
@@ -112,13 +113,13 @@ export const SideMenu: React.FC = () => {
             <span>zswmesh</span>
           </Link>
         </Menu.Item>
-        <Menu.Item key="eosq">
+        <Menu.Item key="blkexplorer">
           {/* TODO: Must come from some config provided by the server */}
-          <a href="http://localhost:8080" target="_blank" rel="noopener noreferrer">
+          <a href={BLK_EXPLORER_LINK} target="_blank" rel="noopener noreferrer">
             <IconWrapper>
               <FontAwesomeIcon icon={faSearch} />
             </IconWrapper>
-            <span>{blockExplorerName}</span>
+            <span>{/*blockExplorerName*/}区块浏览器</span>
           </a>
         </Menu.Item>
       </Menu>

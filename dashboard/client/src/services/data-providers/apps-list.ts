@@ -19,7 +19,7 @@ import { AppsListRequest } from '../../pb/dashboard_pb';
 import * as PbDashboard from '../../pb/dashboard_pb';
 
 const client = new DashboardClient(
-  process.env.REACT_APP_DASHBOARD_GRPC_WEB_URL || 'http://localhost:8081/api'
+  process.env.REACT_APP_DASHBOARD_GRPC_WEB_URL || (window.location.origin + '/api')
 );
 
 export const getAppsList = async (): Promise<PbDashboard.AppsListResponse.AsObject | null> => {

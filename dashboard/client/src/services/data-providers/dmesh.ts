@@ -22,7 +22,7 @@ export interface Peer extends PbDashboard.DmeshClient.AsObject {
 }
 
 const client = new DashboardClient(
-  process.env.REACT_APP_DASHBOARD_GRPC_WEB_URL || 'http://localhost:8081/api'
+  process.env.REACT_APP_DASHBOARD_GRPC_WEB_URL || (window.location.origin + '/api')
 );
 
 export const getDmesh = async (): Promise<PbDashboard.DmeshResponse.AsObject | null> => {
